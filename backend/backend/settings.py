@@ -79,7 +79,7 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "frontend" / "dist"],  # ✅ React build location
+        'DIRS': [],  # ✅ React build location
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -139,12 +139,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / "frontend" / "dist" / "assets",  # JS/CSS
-]
-
-STATIC_ROOT = BASE_DIR / "staticfiles"  # Django collectstatic will put files here
+STATIC_URL = 'static/'
 
 
 # Default primary key field type
