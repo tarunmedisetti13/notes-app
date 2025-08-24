@@ -18,5 +18,4 @@ urlpatterns = [
     path('api/', include('api.urls')),
 
     # Serve React frontend
-    path('', frontend_index, name='home'),
 ]

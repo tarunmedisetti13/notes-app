@@ -50,8 +50,3 @@ class CreateUserView(generics.CreateAPIView):
 # Step 4: Serve Frontend React App
 # ----------------------------
 
-def frontend_index(request):
-    """
-    Render the React index.html template
-    """
-    return render(request, 'index.html')
