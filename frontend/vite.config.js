@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react(),
   tailwindcss()
   ],
-  base:['/login]
+  base:['/login']
 })
